@@ -95,7 +95,7 @@ let swiperPortfolio = new Swiper(".portfolio__container", {
     prevEl: ".swiper-button-prev",
   },
   autoplay: {
-    delay: 4000,
+    delay: 5000,
     disableOnInteraction: false,
   },
   // pagination: {
