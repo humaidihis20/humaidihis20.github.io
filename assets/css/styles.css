@@ -529,8 +529,16 @@ img.home__blob {
   width: 75%;
 }
 
+.skills__materialize {
+  width: 80%;
+}
+
 .skills__php {
   width: 70%;
+}
+
+.skills__laravel {
+  width: 75%;
 }
 
 .skills__figma {
