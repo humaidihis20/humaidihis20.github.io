@@ -64,6 +64,7 @@ tabs.forEach((tab) => {
     tab.classList.add("qualification__active");
   });
 });
+
 /*==================== SERVICES MODAL ====================*/
 const modalViews = document.querySelectorAll(".services__modal");
 const modalBtns = document.querySelectorAll(".services__button");
@@ -86,6 +87,7 @@ for (const closeModal of modalCloses) {
     }
   });
 }
+
 /*==================== PORTFOLIO SWIPER  ====================*/
 let swiperPortfolio = new Swiper(".portfolio__container", {
   cssMode: true,
@@ -127,6 +129,7 @@ let swiperTestimonial = new Swiper(".testimonial__container", {
     },
   },
 });
+
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll("section[id]");
 
