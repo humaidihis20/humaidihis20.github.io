@@ -425,6 +425,14 @@ img.home__blob {
   margin-bottom: var(--mb-2-5);
 }
 
+/* .about__info div:nth-child(1){
+  flex: 1 1 10rem;
+}
+
+.about__info div:nth-child(2){
+  flex: 1 1 50rem;
+} */
+
 .about__info-title {
   font-size: var(--h2-font-size);
   font-weight: var(--font-semi-bold);
