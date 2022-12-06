@@ -541,12 +541,20 @@ img.home__blob {
   width: 90%;
 }
 
+.skills__tailwind {
+  width: 70%;
+}
+
 .skills__php {
   width: 80%;
 }
 
 .skills__laravel {
   width: 80%;
+}
+
+.skills__codeigneter {
+  width: 60%;
 }
 
 .skills__figma {
@@ -750,6 +758,13 @@ img.home__blob {
 
 .portfolio__img {
   width: 300px;
+  border-radius: 0.5rem;
+  justify-self: center;
+}
+
+.portfolio__img__buna {
+  width: 300px;
+  /* height: 800px; */
   border-radius: 0.5rem;
   justify-self: center;
 }
@@ -994,7 +1009,7 @@ img.home__blob {
 }
 /* Show scroll */
 .show-scroll {
-  bottom: 5rem;
+  bottom: 2rem;
 }
 /*========== SCROLL BAR ==========*/
 ::-webkit-scrollbar {
@@ -1237,6 +1252,11 @@ img.home__blob {
 
   .portfolio__img {
     width: 320px;
+  }
+
+  .portfolio__img__buna {
+    width: 320px;
+    /* height: 320px; */
   }
 
   .project {

@@ -92,12 +92,13 @@ for (const closeModal of modalCloses) {
 let swiperPortfolio = new Swiper(".portfolio__container", {
   cssMode: true,
   loop: true,
+  centeredSlides: true,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
   autoplay: {
-    delay: 5000,
+    delay: 4000,
     disableOnInteraction: false,
   },
   // pagination: {
@@ -142,9 +143,13 @@ function scrollActive() {
     sectionId = current.getAttribute("id");
 
     if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-      document.querySelector(".nav__menu a[href*=" + sectionId + "]").classList.add("active-link");
+      document
+        .querySelector(".nav__menu a[href*=" + sectionId + "]")
+        .classList.add("active-link");
     } else {
-      document.querySelector(".nav__menu a[href*=" + sectionId + "]").classList.remove("active-link");
+      document
+        .querySelector(".nav__menu a[href*=" + sectionId + "]")
+        .classList.remove("active-link");
     }
   }
 }
@@ -152,13 +157,17 @@ window.addEventListener("scroll", scrollActive);
 /*==================== CHANGE BACKGROUND HEADER ====================*/
 function scrollHeader() {
   const nav = document.getElementById("header");
-  this.scrollY >= 200 ? nav.classList.add("scroll-header") : nav.classList.remove("scroll-header");
+  this.scrollY >= 200
+    ? nav.classList.add("scroll-header")
+    : nav.classList.remove("scroll-header");
 }
 window.addEventListener("scroll", scrollHeader);
 /*==================== SHOW SCROLL UP ====================*/
 function scrollUp() {
   const scrollUp = document.getElementById("scroll-up");
-  this.scrollY >= 560 ? scrollUp.classList.add("show-scroll") : scrollUp.classList.remove("show-scroll");
+  this.scrollY >= 560
+    ? scrollUp.classList.add("show-scroll")
+    : scrollUp.classList.remove("show-scroll");
 }
 window.addEventListener("scroll", scrollUp);
 /*==================== DARK LIGHT THEME ====================*/
@@ -169,12 +178,18 @@ const iconTheme = "uil-sun";
 const selectedTheme = localStorage.getItem("selected-theme");
 const selectedIcon = localStorage.getItem("selected-icon");
 
-const getCurentTheme = () => (document.body.classList.contains(darkTheme) ? "dark" : "light");
-const getCurentIcon = () => (document.classList.contains(iconTheme) ? "uil-moon" : "uil-sun");
+const getCurentTheme = () =>
+  document.body.classList.contains(darkTheme) ? "dark" : "light";
+const getCurentIcon = () =>
+  document.classList.contains(iconTheme) ? "uil-moon" : "uil-sun";
 
 if (selectedTheme) {
-  document.body.classList[selectedTheme === "dark" ? "add" : "remove"](darkTheme);
-  themeButton.classList[selectedIcon === "uil-moon" ? "add" : "remove"](iconTheme);
+  document.body.classList[selectedTheme === "dark" ? "add" : "remove"](
+    darkTheme
+  );
+  themeButton.classList[selectedIcon === "uil-moon" ? "add" : "remove"](
+    iconTheme
+  );
 }
 
 themeButton.addEventListener("click", () => {
